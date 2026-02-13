@@ -25,6 +25,28 @@ e armazena a imagem em um Blob Storage na Azure para acesso rápido via link.
 Cliente envia uma URL → API gera o QR Code → imagem é salva na Azure → link público é retornado.
 </p>
 
+<p align="center"><strong>Fluxo técnico</strong></p>
+
+<p align="center">
+<strong>1.</strong> Requisição <strong>POST</strong> para <code>/qrcode</code><br>
+Body: { "text": "https://your-url.com" }
+</p>
+
+<p align="center">
+<strong>2.</strong> A API gera o QR Code a partir da URL e armazena a imagem no storage
+</p>
+
+<p align="center">
+<strong>3.</strong> Resposta da API:<br>
+{ "url": "https://qrcode-storager.../image-id" }
+</p>
+
+<p align="center">
+<strong>4.</strong> Ao acessar a URL retornada (requisição <strong>GET</strong> via navegador ou client HTTP),<br>
+a imagem do QR Code é retornada para visualização.
+</p>
+
+
 ---
 
 ## <p align="center">🛠️ Stack</p>
@@ -53,5 +75,5 @@ durante eventos e situações de networking.
 ---
 
 <p align="center">
-  <em>🔗 Compartilhar links deveria ser simples — e este projeto nasceu exatamente para isso.</em>
+  <em>🔗 Uma solução prática para transformar URLs em QR Codes e facilitar o compartilhamento rápido de links.</em>
 </p>

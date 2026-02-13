@@ -1,4 +1,4 @@
-<h1 align="center">spring-qrcode-generator</h1>
+<h1 align="center">Spring QR Code Generator</h1>
 
 <p align="center">
   <img width="220" height="220" alt="QR Code Generator" src="https://github.com/user-attachments/assets/5f1c0757-fcf1-4f72-b3bd-d3d079e65dcb" />
@@ -28,23 +28,28 @@ Cliente envia uma URL → API gera o QR Code → imagem é salva na Azure → li
 <p align="center"><strong>Fluxo técnico</strong></p>
 
 <p align="center">
-<strong>1.</strong> Requisição <strong>POST</strong> para <code>/qrcode</code><br>
-Body: { "text": "https://your-url.com" }
+🔹 <strong>1. Requisição</strong><br>
+POST <code>/qrcode</code><br>
+Body:<br>
+<code>{ "text": "https://your-url.com" }</code>
 </p>
 
 <p align="center">
-<strong>2.</strong> A API gera o QR Code a partir da URL e armazena a imagem no storage
+⚙️ <strong>2. Processamento</strong><br>
+A API gera o QR Code a partir da URL e armazena a imagem no storage configurado.
 </p>
 
 <p align="center">
-<strong>3.</strong> Resposta da API:<br>
-{ "url": "https://qrcode-storager.../image-id" }
+📤 <strong>3. Resposta</strong><br>
+<code>{ "url": "https://qrcode-storager.../image-id" }</code>
 </p>
 
 <p align="center">
-<strong>4.</strong> Ao acessar a URL retornada (requisição <strong>GET</strong> via navegador ou client HTTP),<br>
-a imagem do QR Code é retornada para visualização.
+🖼️ <strong>4. Consumo</strong><br>
+Ao acessar a URL retornada (requisição <strong>GET</strong> via navegador ou client HTTP),<br>
+a imagem do QR Code é retornada para visualização imediata.
 </p>
+
 
 
 ---

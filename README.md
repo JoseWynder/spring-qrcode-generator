@@ -1,7 +1,8 @@
 <h1 align="center">Spring QR Code Generator</h1>
 
-<p align="center"><img width="220" height="220" alt="qrcode" src="https://github.com/user-attachments/assets/f7cd752b-60a9-4aa8-b3b3-7c27ca06b000" />
-
+<p align="center">
+  <img width="220" height="220" alt="qrcode" src="https://github.com/user-attachments/assets/f7cd752b-60a9-4aa8-b3b3-7c27ca06b000" />
+</p>
 
 <p align="center">
 Transforma qualquer URL em um QR Code pronto para compartilhamento rápido.
